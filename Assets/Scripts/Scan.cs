@@ -25,7 +25,8 @@ public class Scan : MonoBehaviour
         {
             Debug.Log("please place item in the bagging area :)");
             OnScan?.Invoke();
-            
+            transform.gameObject.tag = "baggable";
+
         }
     }
 }

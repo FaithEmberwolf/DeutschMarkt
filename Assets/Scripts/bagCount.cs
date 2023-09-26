@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class groceryCount : MonoBehaviour
+public class bagCount : MonoBehaviour
 {
 
     TMPro.TMP_Text text;
@@ -14,7 +14,7 @@ public class groceryCount : MonoBehaviour
 
     }
 
-    private void Start() => UpdateCount(); 
+    private void Start() => UpdateBagCount(); 
         
     private void OnEnable() => Scan.OnScan += OnScanScan;
     private void OnDisable() => Scan.OnScan -= OnScanScan; 
@@ -24,13 +24,12 @@ public class groceryCount : MonoBehaviour
     {
         //updates count by 1
         count++;
-        UpdateCount(); 
+        UpdateBagCount(); 
     }
 
-    private void UpdateCount()
+    private void UpdateBagCount()
     {
         //tells UI to show how many scanned out of how many needs to be scanned 
         text.text = $"{count} / 6";
-        
     }
 }
