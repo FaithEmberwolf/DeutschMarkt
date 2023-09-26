@@ -1,19 +1,17 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Schema;
 using UnityEngine;
 
 public class Scan : MonoBehaviour
 {
     public static event Action OnScan;
+    public static int total; 
 
-  
-    void Start()
-    {
 
-        
-
-    }
+    void Awake() => total++;
+    
 
     // Update is called once per frame
     void Update()
