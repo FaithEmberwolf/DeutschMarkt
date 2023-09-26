@@ -32,6 +32,6 @@ public class groceryCount : MonoBehaviour
     {
         //tells UI to show how many scanned out of how many needs to be scanned 
         text.text = $"{count} / 6";
-      
+
     }
 }
