@@ -7,35 +7,33 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public GameObject timerDisplay;
-    public int timeLeft = 10;
-    public bool takingAway = false;
+    internal static float deltaTime;
+    public bool timerOn;
+    public float timeLeft;
 
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
-        timerDisplay.GetComponent<Text>().text = "0" + timeLeft;
+        timerOn = true;
+
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        if (takingAway = false && timeLeft > 0 )
+        if (timerOn)
         {
-            StartCoroutine(TimerCount()); 
+            if (timeLeft > 0)
+            {
+                timeLeft -= Time.deltaTime;
+            }
+            else
+            {
+
+                timeLeft = 0;
+                timerOn = false;
+
+            }
         }
     }
-    //start coroutine (timer) 
-    IEnumerator TimerCount()
-    {
-        //takes time away 
-        takingAway = true; 
-        yield return new WaitForSeconds(1);
-        timeLeft -= 1;
-        timerDisplay.GetComponent<Text>().text = "0" + timeLeft; 
-        takingAway = false;
-
-    }
-        
-
-       
-
 }
