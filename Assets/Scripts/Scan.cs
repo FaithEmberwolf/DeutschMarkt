@@ -23,9 +23,9 @@ public class Scan : MonoBehaviour
     {
         if (other.CompareTag("grocery"))
         {
-            Debug.Log("please place item in the bagging area :)");
+            //Debug.Log("please place item in the bagging area :)");
             OnScan?.Invoke();
-           
+
 
         }
     }
