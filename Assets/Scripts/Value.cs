@@ -7,6 +7,7 @@ public class Value : MonoBehaviour
 {
     public GameObject timer;
     public TextMeshProUGUI text;
+    public int inBag; 
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,13 @@ public class Value : MonoBehaviour
     void Update()
     {
         text.text = timer.GetComponent<Timer>().timeLeft.ToString();
+
+        if(inBag == 6)
+        {
+            timer.GetComponent<Timer>().timerOn = false;
+            
+        }
+        
     }
 }
 
