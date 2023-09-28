@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class groceryCount : MonoBehaviour
@@ -7,7 +8,13 @@ public class groceryCount : MonoBehaviour
 
     TMPro.TMP_Text text;
     int count;
-    public GameObject grocery; 
+    public GameObject grocery;
+
+    public groceryCount(TMP_Text text)
+    {
+        this.text = text;
+    }
+
     // Start is called before the first frame update
     void Awake()
     {
