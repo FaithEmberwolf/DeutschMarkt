@@ -205,7 +205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1 &42043513 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 3785f4afe9dacc34e97d97c54833fd90, type: 3}
@@ -288,7 +289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1 &48615309 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: d0b25a0bca68d0e48ac789e6738ae3cf, type: 3}
@@ -1401,7 +1403,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1001 &328900706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1554,7 +1557,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1 &402455054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,6 +1825,7 @@ GameObject:
   - component: {fileID: 506359757}
   - component: {fileID: 506359756}
   - component: {fileID: 506359760}
+  - component: {fileID: 506359761}
   m_Layer: 0
   m_Name: 'Unfolded_Bag '
   m_TagString: Untagged
@@ -1936,6 +1941,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 9.999999, y: 1.2509793, z: 9.999999}
   m_Center: {x: 0, y: 0.30524698, z: 0}
+--- !u!114 &506359761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506359755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151d109efd1802d4c9a21112dc771835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &508428068
 GameObject:
   m_ObjectHideFlags: 0
@@ -2123,7 +2140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1001 &540923848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2426,7 +2444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1 &595153195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2546,7 +2565,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1001 &662387461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2714,7 +2734,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1 &725346305
 GameObject:
   m_ObjectHideFlags: 0
@@ -3514,7 +3535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1 &946928393
 GameObject:
   m_ObjectHideFlags: 0
@@ -3731,7 +3753,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1 &972300087 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 95837a867f13d5340927fadbe3ecffb8, type: 3}
@@ -3814,7 +3837,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1 &972477919
 GameObject:
   m_ObjectHideFlags: 0
@@ -4588,7 +4612,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1 &1241137117
 GameObject:
   m_ObjectHideFlags: 0
@@ -4765,7 +4790,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1 &1252855597
 GameObject:
   m_ObjectHideFlags: 0
@@ -4982,7 +5008,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1 &1282324479 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: d9e5b86cae878e14daf65d59f478840a, type: 3}
@@ -5065,7 +5092,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1001 &1344306425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5489,7 +5517,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1 &1502430646
 GameObject:
   m_ObjectHideFlags: 0
@@ -5677,7 +5706,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1 &1631724159
 GameObject:
   m_ObjectHideFlags: 0
@@ -6211,7 +6241,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1 &1756571984
 GameObject:
   m_ObjectHideFlags: 0
@@ -6895,7 +6926,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1001 &2024099148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7223,7 +7255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7037f00e9884498d713a1f72f7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grocery: {fileID: 0}
+  count: 0
+  wasscanned: 0
 --- !u!1001 &2111175466
 PrefabInstance:
   m_ObjectHideFlags: 0

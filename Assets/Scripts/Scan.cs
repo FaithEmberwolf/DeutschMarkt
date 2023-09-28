@@ -21,12 +21,11 @@ public class Scan : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("grocery"))
+        if (other.gameObject.tag == "grocery")
         {
+            
             //Debug.Log("please place item in the bagging area :)");
             OnScan?.Invoke();
-
-
         }
     }
 }

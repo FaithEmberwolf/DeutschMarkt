@@ -7,6 +7,7 @@ public class groceryCount : MonoBehaviour
 {
 
     TMPro.TMP_Text text;
+<<<<<<< HEAD
     int count;
     public GameObject grocery;
 
@@ -15,6 +16,12 @@ public class groceryCount : MonoBehaviour
         this.text = text;
     }
 
+=======
+    public int count;
+    public bool wasscanned;
+    
+    //public GameObject grocery; 
+>>>>>>> main
     // Start is called before the first frame update
     void Awake()
     {
@@ -30,9 +37,18 @@ public class groceryCount : MonoBehaviour
 
     void OnScanScan()
     {
-        //updates count by 1
-        count++;
-        UpdateCount(); 
+        if (wasscanned)
+        {
+            print("i've already been scanned");
+        }
+        else
+        {
+            //updates count by 1
+            count++;
+            UpdateCount();
+            wasscanned = true;
+        }
+
     }
 
     private void UpdateCount()
@@ -41,4 +57,5 @@ public class groceryCount : MonoBehaviour
         text.text = $"{count} / 6";
 
     }
+
 }
