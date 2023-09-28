@@ -9,7 +9,7 @@ public class groceryCount : MonoBehaviour
     TMPro.TMP_Text text;
     public int count;
     public bool wasscanned;
-    
+
     //public GameObject grocery; 
     // Start is called before the first frame update
     void Awake()
@@ -18,33 +18,22 @@ public class groceryCount : MonoBehaviour
 
     }
 
-    private void Start() => UpdateCount(); 
-        
-    private void OnEnable() => Scan.OnScan += OnScanScan;
-    private void OnDisable() => Scan.OnScan -= OnScanScan; 
-   
-
-    void OnScanScan()
+    private void Update()
     {
-        if (wasscanned)
-        {
-            print("i've already been scanned");
-        }
-        else
-        {
-            //updates count by 1
-            count++;
-            UpdateCount();
-            wasscanned = true;
-        }
 
-    }
-
-    private void UpdateCount()
-    {
         //tells UI to show how many scanned out of how many needs to be scanned 
         text.text = $"{count} / 6";
 
     }
+
+    private void Scanitem()
+    {
+        count++;
+    }
+
+    private void OnEnable() => Scan.OnScan += Scanitem;
+    private void OnDisable() => Scan.OnScan -= Scanitem;
+
+
 
 }

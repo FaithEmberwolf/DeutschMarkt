@@ -7,7 +7,7 @@ using UnityEngine;
 public class Scan : MonoBehaviour
 {
     public static event Action OnScan;
-    public static int total; 
+    public int total; 
 
 
     void Awake() => total++;
@@ -23,9 +23,17 @@ public class Scan : MonoBehaviour
     {
         if (other.gameObject.tag == "grocery")
         {
-            
+            if (other.gameObject.GetComponent<scancheck>().wasscanned)
+            {
+                print("i've already been scanned");
+            }
+            else
+            {
+                OnScan?.Invoke();
+                other.gameObject.GetComponent<scancheck>().wasscanned = true;
+            }
             //Debug.Log("please place item in the bagging area :)");
-            OnScan?.Invoke();
+            
         }
     }
 }

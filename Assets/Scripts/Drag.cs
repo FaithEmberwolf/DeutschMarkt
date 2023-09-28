@@ -10,9 +10,15 @@ public class Drag : MonoBehaviour
 
     Vector3 mousePosition;
     private bool isDragged;
+    public float dragplane;
     private Vector3 getMousePos()
     {
         return Camera.main.WorldToScreenPoint(transform.position);
+    }
+
+    public void Start()
+    {
+           dragplane = transform.position.z;
     }
 
     private void OnMouseDown()
@@ -29,6 +35,7 @@ public class Drag : MonoBehaviour
     private void OnMouseDrag()
     {
         transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition - mousePosition);
+        transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
     }
 
 

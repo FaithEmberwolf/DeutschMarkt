@@ -7,20 +7,16 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    
 
-  /*  void Awake()
+    public int totalscanned;
+    public int totalBagged; 
+    public void Update()
     {
-        if (instance == null)
+        if (totalscanned == 6)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
+
         }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }*/
+    }
 
     public void LoadGameScene()
     {

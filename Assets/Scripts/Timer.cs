@@ -10,23 +10,29 @@ public class Timer : MonoBehaviour
 {
     internal static float deltaTime;
     public bool timerOn;
-    public float timeLeft = 10f;
+    public float timeLeft = 10;
+
+    public TextMeshProUGUI timetext;
 
     // Start is called before the first frame update
     void Start()
     {
         timerOn = true;
-
+        timetext = GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
         if (timerOn)
         {
             if (timeLeft > 0)
             {
                 timeLeft -= Time.deltaTime;
+                int displaytime = (int)MathF.Ceiling(timeLeft);
+                timetext.text = displaytime.ToString();
             }
             else
             {
@@ -37,5 +43,6 @@ public class Timer : MonoBehaviour
                 SceneManager.LoadScene(1);
             }
         }
+       
     }
 }
