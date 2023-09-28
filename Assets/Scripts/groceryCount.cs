@@ -7,21 +7,10 @@ public class groceryCount : MonoBehaviour
 {
 
     TMPro.TMP_Text text;
-<<<<<<< HEAD
-    int count;
-    public GameObject grocery;
-
-    public groceryCount(TMP_Text text)
-    {
-        this.text = text;
-    }
-
-=======
     public int count;
     public bool wasscanned;
     
     //public GameObject grocery; 
->>>>>>> main
     // Start is called before the first frame update
     void Awake()
     {
